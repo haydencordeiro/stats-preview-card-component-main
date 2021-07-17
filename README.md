@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/haydencordeiro/stats-preview-card-component-main)
-- Live Site URL: [Add live site URL here](https://haydencordeiro.github.io/stats-preview-card-component-main/)
+- Solution URL: [Click Here](https://github.com/haydencordeiro/stats-preview-card-component-main)
+- Live Site URL: [Click Here](https://haydencordeiro.github.io/stats-preview-card-component-main/)
 
 ## My process
 
