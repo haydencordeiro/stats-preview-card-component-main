@@ -1,22 +1,129 @@
-
-
 $very-dark-blue: hsl(233, 47%, 7%);
-$dark-blue:hsl(244, 38%, 16%);
-$soft-violet:hsl(277, 64%, 61%);
-$white:hsl(0, 0%, 100%);
-$white-para:hsla(0, 0%, 100%, 0.75);
+$dark-blue: hsl(244, 38%, 16%);
+$soft-violet: hsl(277, 64%, 61%);
+$white: hsl(0, 0%, 100%);
+$white-para: hsla(0, 0%, 100%, 0.75);
 $white-stat: hsla(0, 0%, 100%, 0.6);
-$font-size:15px;
 // font-family: 'Lexend Deca', sans-serif;
 // font-family: 'Inter', sans-serif;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+}
+body {
+  min-height: 100%;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $very-dark-blue;
+  font-family: "Inter", sans-serif;
+  min-height: 100%;
 
-
-html{
-    box-sizing: border-box;
-    padding:0;
-    margin: 0;
+  .centered {
+    width: 65%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark-blue;
+    border-radius: 8px;
+  }
 }
 
+.card {
+  color: $white;
+  display: flex;
+  width: 100%;
+  height: 400px;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: space-evenly;
 
+  .card-body {
+    flex:1
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+  
+    // margin-right: 1.2rem;
+
+    .title {
+        padding-left: 4rem;
+        padding-top: 4rem;
+      width: 85%;
+      color: $white;
+      font-weight: 800;
+      font-size: 2rem;
+      span {
+        color: $soft-violet;
+      }
+    }
+    .para {
+        padding-left: 4rem;
+
+      width: 80%;
+
+      font-family: "Lexend", sans-serif;
+      font-weight: 400;
+
+      color: $white-para;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .stats {
+        padding-left: 4rem;
+
+      width: 85%;
+
+      color: $white-stat;
+      display: flex;
+      flex-direction: row;
+      margin-top: 4rem;
+
+      .stat {
+        .num {
+          font-family: "Inter", sans-serif;
+
+          color: $white;
+          font-weight: 800;
+          font-size: 1.3rem;
+          margin-bottom: 0.3rem;
+          letter-spacing:0.1rem;
+
+        }
+        .text {
+          font-family: "Lexend", sans-serif;
+          font-weight: 400;
+          font-size: 0.65rem;
+          letter-spacing:0.05rem;
+        }
+        margin-right: 3rem;
+      }
+    }
+  }
+
+  .image {
+
+    width: 100%;
+    background-color: $soft-violet;
+    background-image: url(images/image-header-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode:multiply;
+    background-position: center;
+  }
+}
+
+.attribution {
+  margin-top: 2rem;
+  color: $white-para;
+}
